@@ -14,6 +14,7 @@ import 'material-design-icons-iconfont';
 import '../../elements/emby-button/paper-icon-button-light';
 import ServerConnections from '../ServerConnections';
 import screenfull from 'screenfull';
+import { randomInt } from '../../utils/number.ts';
 
 /**
  * Name of transition event.
