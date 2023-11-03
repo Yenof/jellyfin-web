@@ -72,8 +72,8 @@ function getBackdropImageUrl(item, options, apiClient) {
     }
 
     if (item.BackdropImageTags?.length) {
-        const randomIndex = randomInt(0, item.BackdropImageTags.length - 1);
-        options.tag = item.BackdropImageTags[randomIndex];
+        options.index = randomInt(0, item.BackdropImageTags.length - 1);
+        options.tag = item.BackdropImageTags[options.index];
         return apiClient.getScaledImageUrl(item.Id, options);
     }
 
